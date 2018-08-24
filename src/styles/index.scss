@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  /* Gradient from ui-gradients */
+  background: #085078;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #85D8CE, #085078);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85D8CE, #085078);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size:100% 100%;
+}
+
+nav{
+    a{
+        margin: 0 10px;
+    }
+}
+
+.App{
+    margin-top:3px;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    @keyframes fadein {
+        from { opacity:0;}
+        to {opacity:1;}
+    }
+    @-moz-keyframes fadein { /* Firefox */
+        from {opacity:0;}
+        to {opacity:1;}
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {opacity:0;}
+        to {opacity:1;}
+    }
+    @-o-keyframes fadein { /* Opera */
+        from {opacity:0;}
+        to {opacity: 1;}
+    }
+}
+
+.Home{
+  h1{
+    font-weight: bold;
+    margin-top:80px;  
+  }
+
+  .SearchTerms{
+      list-style: none;
+
+      li{
+        padding: 0 20px;
+        display:inline-block;
+        cursor:pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+  }
+
+}
+
+.NotFound{
+    background:rgba(0,0,0,0.7);
+    padding:20px;
+}
+
+.Search{
+    .error{
+        background:red;
+        border:darkred;
+    }
+
+
+}
+

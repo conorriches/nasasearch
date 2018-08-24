@@ -1,7 +1,7 @@
 module.exports = {
     verbose: true,
     "moduleNameMapper": {
-        "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+        "\\.(css|scss)$": "<rootDir>/node_modules/jest-css-modules"
     }
 };
 
