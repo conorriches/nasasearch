@@ -71,7 +71,6 @@ export class Search extends React.Component {
             let queryStr = `${this.state.query}&media_type=${Object.keys(this.state.media).filter(o => this.state.media[o]).join(',')}`
 
             this.fetchResults(`https://images-api.nasa.gov/search?q=${queryStr}`).then(results => {
-                console.log(results);
                 this.setState(
                     {
                         fetch: results.collection,
@@ -91,7 +90,7 @@ export class Search extends React.Component {
                     <input type="text"
                         className={classnames("form-control", { "is-invalid": this.state.error })}
                         value={this.state.query}
-                        name="Search__query"
+                        name="query"
                         onChange={this.handleChange} />
 
                     {this.state.error ? <span className="Search__error">{this.state.error}</span> : ""}
