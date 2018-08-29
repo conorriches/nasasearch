@@ -1,0 +1,25 @@
+{
+    "data": {
+        "collection": {
+            "href": "https://images-api.nasa.gov/asset/Ep53_Mars%20is%20Hard",
+            "version": "1.0",
+            "items": [
+                {
+                    "href": "http://images-assets.nasa.gov/audio/Ep53_Mars is Hard/Ep53_Mars is Hard~orig.mp3"
+                },
+                {
+                    "href": "http://images-assets.nasa.gov/audio/Ep53_Mars is Hard/Ep53_Mars is Hard~128k.m4a"
+                },
+                {
+                    "href": "http://images-assets.nasa.gov/audio/Ep53_Mars is Hard/Ep53_Mars is Hard~128k.mp3"
+                },
+                {
+                    "href": "http://images-assets.nasa.gov/audio/Ep53_Mars is Hard/Ep53_Mars is Hard~64k.m4a"
+                },
+                {
+                    "href": "http://images-assets.nasa.gov/audio/Ep53_Mars is Hard/metadata.json"
+                }
+            ]
+        }
+    }
+}

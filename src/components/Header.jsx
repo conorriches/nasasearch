@@ -8,6 +8,7 @@ export class Header extends React.Component {
             <nav className="nav nav-masthead justify-content-center">
                 <Link to="/">Home</Link>
                 <Link to="/search">Search</Link>
+                <Link to="/404">404</Link>
             </nav>
         </div>
     }

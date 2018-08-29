@@ -2,7 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: [path.join(__dirname, "/src/index.js")],
+    entry: ['whatwg-fetch', path.join(__dirname, "/src/index.js")],
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'index_bundle.js',
+        publicPath: '/'
+    },
     module: {
         rules: [
             {
@@ -20,9 +25,9 @@ module.exports = {
                 test: /\.scss$/,
                 exclude: /node_modules/,
                 use: [
-                    "style-loader", // creates style nodes from JS strings
-                    "css-loader", // translates CSS into CommonJS
-                    "sass-loader" // compiles Sass to CSS, using Node Sass by default
+                    "style-loader",
+                    "css-loader", 
+                    "sass-loader" 
                 ]
             }
         ]

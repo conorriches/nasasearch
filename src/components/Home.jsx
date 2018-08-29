@@ -10,28 +10,28 @@ export class Home extends React.Component {
     }
 
     handleSampleClick(event) {
-       this.setState({query: event.target.innerHTML});
+        this.setState({ query: event.target.innerHTML });
     }
-    
+
     render() {
         return <div className="Home">
             <div className="row">
                 <h1 className="col-xs-12 col-md-8 mx-auto text-center">Search the NASA image library</h1>
             </div>
             <div className="row">
-            <div className="col-xs-12 col-md-8 mx-auto text-center">
-                <p>
-                    Can't think of anything to search? Check out a few:
-                </p>
-                <ul className="SearchTerms">
-                    <li onClick={this.handleSampleClick}>Oreon</li>
-                    <li onClick={this.handleSampleClick}>Mars</li>
-                    <li onClick={this.handleSampleClick}>Moon</li>
-                </ul>
-            </div>
+                <div className="col-xs-12 col-md-8 mx-auto text-center">
+                    <p>
+                        Can't think of anything to search? Check out a few:
+                    </p>
+                    <ul className="Home__Suggested">
+                        <li onClick={this.handleSampleClick}>Orion</li>
+                        <li onClick={this.handleSampleClick}>Mars</li>
+                        <li onClick={this.handleSampleClick}>Moon</li>
+                    </ul>
+                </div>
             </div>
             <div className="row">
-                <div className="col-xs-12 col-md-8 mx-auto text-center">
+                <div className="col-xs-12 col-md-12 mx-auto text-center">
                     <Search query={this.state.query} />
                 </div>
             </div>

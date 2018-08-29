@@ -7,8 +7,9 @@ import './styles/index.scss';
 import Home from "./components/Home";
 import Search from "./components/Search";
 import Header from "./components/Header";
-import NotFound from "./components/NotFound"
-
+import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
+import Asset from "./components/Asset";
 
 class App extends Component {
     render() {
@@ -21,10 +22,12 @@ class App extends Component {
                             <Switch>
                                 <Route exact path="/" component={Home} />
                                 <Route exact path="/search" component={Search} />
+                                <Route path="/asset/:id" component={Asset} />
                                 <Route component={NotFound} />
                             </Switch>
                         </div>
                     </div>
+                    <Route component={Footer} />
                 </div>
             </Router>
         );
